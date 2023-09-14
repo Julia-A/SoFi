@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    height:100vh;
+    background: url('https://th.bing.com/th/id/R.fdd3344fca3f23ad392e1f178e8fca36?rik=suCf1dPH%2fdJvyw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fTeal-wallpaper-HD-high-quality-free-download.jpg&ehk=K644mHb3XGdUzETOvjdZRxQFXPYI6eLNvQlSwBrCmzg%3d&risl=1&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+fieldset{
+    margin-bottom:2rem;
+    border: none;
+}
+
+label{
+    display: block;
+    margin:0 0 0.5rem 0;
+    font-size: 2rem;
+    color: teal;
+}
+#reg-form{
+    height:70%;
+    width:70%;
+    background-color: rgba(0,0,0, 0.8);
+    border-radius: 15px;
+    margin:0 auto;
+    padding: 2rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+input{
+    margin-bottom: 0.8rem;
+    width: 80%;
+    height: 2.5rem;
+    background-color: transparent;
+    color: grey;
+    outline: none;
+    border: 2px solid rgba(0,128,128,0.4);
+    padding: 1rem;
+    border-radius: 5px;
+
+    font-size:1.2rem
+}
+label[for="password"] > span{
+    font-size: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.buttons button{
+    font-size: 1.2rem;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 7px;
+    outline: none;
+    padding: 0.8rem;
+    border: transparent;
+    color: teal;
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: black;
+    background-color: rgba(0,128,128,0.4);
+}

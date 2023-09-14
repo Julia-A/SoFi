@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoFi</title>
+    <title>SoFI Demo Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="reg-form">
+        <form action="#" method="post">
+                <fieldset>
+                    <label for="fullName">Fullname</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password <span>(input more than 8 charcters)</span></label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" pattern="[a-z0-5]{8,}" required>
+                </fieldset>
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+        </form>
+    </div>
 </body>
 </html>
