@@ -1,0 +1,21 @@
+{
+  "name": "sofi",
+  "version": "1.0.0",
+  "description": "This is a user managment REST API.\r It is a REST API that helps to manage users and their audio preferences.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
