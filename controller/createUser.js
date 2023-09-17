@@ -1,7 +1,7 @@
 const Users = require('../model/Users');
 const bcrypt = require('bcrypt');
 
-const loginCtrl = async (req, res) => {
+const createUser = async (req, res) => {
     //check if the request is in the right format
     if (!req?.body || !req?.body?.email || !req?.body?.fullName || !req?.body?.password) {
         return res.status(400).json({ message: "Incomplete request" });
@@ -26,4 +26,4 @@ const loginCtrl = async (req, res) => {
     }
 };
 
-module.exports = loginCtrl;
+module.exports = createUser;
