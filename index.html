@@ -7,44 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="reg-form">
-        <form id="registrationForm" action="https://sound-fi.onrender.com/users/new-user" method="post">
-                <fieldset>
-                    <label for="fullName">Fullname</label>
-                    <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" required>
-                </fieldset>
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-                </fieldset>
-                <fieldset>
-                    <label for="password">Password <span>(input more than 8 charcters)</span></label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
-                </fieldset>
-                <div class="buttons">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset Form</button>
-                </div>
+    <div class="container">
+        <form id="registrationForm">
+            <fieldset>
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullName" id="fullName" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </fieldset>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
         </form>
+        <p id="message"></p>
     </div>
 
-    <script>
-        const formEl = document.querySelector('#registrationForm');
-
-        formEl.addEventListener('submit', event => {
-            event.preventDefault();
-
-            const formData = new FormData(formEl);
-            const data = Object.fromEntries(formData);
-
-            fetch('https://sound-fi.onrender.com/users/new-user', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json' 
-                },
-                body: JSON.stringify(data)
-            })
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
