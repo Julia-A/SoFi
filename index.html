@@ -28,6 +28,23 @@
         </form>
     </div>
 
-    <script src="./script.js"></script>
+    <script>
+        const formEl = document.querySelector('#registrationForm');
+
+        formEl.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const formData = new FormData(formEl);
+            const data = Object.fromEntries(formData);
+
+            fetch('https://sound-fi.onrender.com/users/new-user', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json' 
+                },
+                body: JSON.stringify(data)
+            })
+        });
+    </script>
 </body>
 </html>
