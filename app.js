@@ -5,6 +5,10 @@ const PORT = 3000 || 8000;
 const connectDB = require('./config/connectDB');
 connectDB();
 const mongoose = require('mongoose');
+const cors = require('cors');
+
+//CORS access
+app.use(cors());
 
 //middleware
 app.use(express.json());
