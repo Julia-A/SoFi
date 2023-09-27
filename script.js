@@ -25,17 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             body: JSON.stringify(formData) // Convert the data to JSON format
         })
-        .then(response => response.json())
-        .then(data => {
-            // Handle the response from the backend
-            if (data.success) {
-                message.textContent = 'Registration successful';
-                registrationForm.reset();
-            } else {
-                message.textContent = 'Registration failed. Please try again.';
+        .then(res => {
+            if (res.status !== 200) {
+                // Handle error response
+                throw new Error('Something went wrong');
             }
+            return res.text();
+        })
+        .then(responseText => {
+            // Success: Redirect to dashboard.html or handle success response
+            location.href = 'dashboard.html';
         })
         .catch(error => {
+            // Handle any errors here
             console.error('Error:', error);
             message.textContent = 'An error occurred. Please try again later.';
         });

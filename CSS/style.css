@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.login-and-signup-div{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
