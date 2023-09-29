@@ -18,17 +18,16 @@
         rel="stylesheet"
         />
 
-        <title>Sign Up | SoFi</title>
+        <title>Sign Up | SoundFi</title>
     </head>
     <body>
         <header>
             <!-- THE NAVIGATION -->
-            <a href="#">
-                <div>
-                   <img class="logo" src="./Images_Rashida/logo.svg" alt="logo">
-                </div>
-            </a>
-                </header>
+            <nav>
+                <a href="#"><img class="logo" src="../images/Logo.svg" alt="logo"></a>
+                <a href="#"><img src="../images/ant-design_home-filled.jpg" alt="home icon"></a>
+            </nav>
+        </header>
                 
         <main>
             <div class="container">
@@ -36,21 +35,19 @@
                     <img src="./Images_Rashida/unsplash_vaY-3ZDODEk.png" alt="Image of Large Heaphones" />
                 </div>
                 <div class="form-container">
-                    <form action="#">
-                        <h2>Welcome!</h2>
-                        <h3>Sign Up to Continue</h3>
+                    <h2>Welcome!</h2>
+                    <h3>Sign Up to Continue</h3>
+                    <form id="registrationForm">
                         
                         <!-- <p class="form-titles">Full Name</p> -->
-                        <div class="input-field">
-                        <input
-                        type="text"
-                        name="fullName"
-                        id="name"
-                        placeholder="Your Full Name"
-                    />
-                        </div>
+                        <fieldset class="input-field">
+                            <legend>full Name</legend>
+                            <input type="text" name="fullName" id="fullName" placeholder="Your Full Name"/>
+                        </fieldset>
+
                         <!-- <p class="form-titles">Email</p> -->
-                        <div class="input-field">
+                        <fieldset class="input-field">
+                            <legend>Email</legend>
                             <input
                                 
                                 type="email"
@@ -59,29 +56,25 @@
                                 id="email"
                                 required
                             />
-                        </div>
+                        </fieldset>
                         <!-- <p class="form-titles">Password</p> -->
-                        <div class="input-field">
+                        <fieldset class="input-field">
+                            <legend>Password</legend>
                             <input
                                 type="password"
                                 placeholder="Your Password"
                                 name="password"
                                 id="password"
                                 required
-                            />
-                            <img
-                                src="./Images_Rashida/eye-slash.svg"
-                                alt="password revealer"
-                                class="eye-icon"
-                            />
-                           
-                        </div>
+                            />                           
+                        </fieldset>
+
                         <div class="password-flex">
                             <div class="policy">
                                 <input
                                     type="checkbox"
                                     name="policy"
-                                    id="policy"
+                                    id="private-policy"
                                     required
                                 />
                                 <label for="private-policy" class="policy"
@@ -93,6 +86,8 @@
                         <div class="button">
                             <input type="submit" value="Sign up" />
                         </div>
+                    </form>
+
                         <p class="paragraph"> OR SIGN UP WITH </p>
                         <div class="social-links">
                             <a href="#">
@@ -129,7 +124,7 @@
                         <div class="form-link">
                             <span
                                 >Already have an account?
-                                <a href="#" class="Login"> Login</a></span
+                                <a href="../Log in/login.html" class="Login"> Login</a></span
                             >
                         </div>
                         <div class="term">
@@ -141,9 +136,10 @@
                                 <p><a href="#">Terms and Conditions</a></p>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </main>
+
+        <script src="../script.js"></script>
     </body>
 </html>

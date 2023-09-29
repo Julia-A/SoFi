@@ -20,9 +20,17 @@
     padding: 0;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3rem;
+}
+
 .logo{
     cursor: pointer;
-    
+    width: 200px;
+    height: 60px;
 }
 
 /* LOGO ANIMATION */
@@ -79,7 +87,7 @@ main {
     width: 36%;
     height: 44rem;
     padding: 1.5rem;
-    text-align: center;
+    text-align: left;
 }
 h2 {
     font-size: 2rem;
@@ -92,8 +100,10 @@ h3 {
 }
 
 .input-field {
-    position: relative;
-    padding-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--form-field-border);
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
 }
 
 #password {
@@ -101,17 +111,15 @@ h3 {
 }
 
 .input-field > input {
-    border: 1px solid var(--form-field-border);
-    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
     width: 100%;
-    padding: 1rem;
+    padding-inline: 1rem;
     background-color: var(--body-background);
     font-family: var(--font-family);
+    text-align: center;
 }
 
-.input-field > input:focus {
-    outline: 1px solid var(--main-green);
-}
 
 .input-field > input::placeholder {
     opacity: 45%;
@@ -119,12 +127,6 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-.eye-icon {
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    cursor: pointer;
-}
 
 
 input[type="checkbox"] {
@@ -170,7 +172,7 @@ input[type="submit"]:hover {
 }
 
 .form-link {
-    padding: 1.5rem 0 2rem;
+    padding: 1.5rem 0 0rem;
     text-align: center;
 }
 

@@ -86,9 +86,15 @@
     margin-top: 200px;
 
 }
-.side-nav .side-bar-ul .active
+.side-nav .side-bar-ul .active, .side-nav .side-bar-ul .indented
 {
     border-right: 5px solid #7CF2D2;
+    padding-left: 0.8rem;
+}
+.side-nav .side-bar-ul .indented span
+{
+    font-weight: bold;
+    color: #056E51;
 }
 .side-nav .side-bar-ul li i
 {

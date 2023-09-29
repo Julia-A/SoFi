@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(responseText => {
             // Success: Redirect to dashboard.html or handle success response
-            location.href = 'dashboard.html';
+            location.href = '../userInfo/userInfo.html';
         })
         .catch(error => {
             // Handle any errors here
