@@ -33,6 +33,7 @@
 {
     width: 200px;
     height: 60px ;
+    object-fit: cover;
 }
 
 .main-nav .nav-right
